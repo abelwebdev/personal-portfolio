@@ -154,7 +154,7 @@ function Home() {
               <ProjectCard
                 imgPath={flickVerse}
                 title="Flick Verse"
-                description="A movie streaming site built with React.js and React-Bootstrap, featuring the latest movies and TV shows, along with a search function to help you find content quickly and easily."
+                description="A movie streaming site built with React.js and Tailwind CSS, featuring the latest movies and TV shows, along with a search function to help you find content quickly and easily."
                 ghLink="https://github.com/abelwebdev/flick-verse"
                 demoLink="https://flick-verse.netlify.app/"
               />
