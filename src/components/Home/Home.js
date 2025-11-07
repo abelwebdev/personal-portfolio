@@ -11,6 +11,7 @@ import Techstack from "../About/Techstack";
 import ProjectCard from "../Projects/ProjectCards";
 import flickVerse from "../../Assets/Projects/flickVerse.png"
 import fitTrack from "../../Assets/Projects/fit_track.png";
+import GuitarJamTrack from '../../Assets/Projects/GuitarJamTrack.png'
 
 function Home() {
   const [expand, updateExpanded] = useState(false);
@@ -156,9 +157,20 @@ function Home() {
                 title="Flick Verse"
                 description="A movie streaming site built with React.js and Tailwind CSS, featuring the latest movies and TV shows, along with a search function to help you find content quickly and easily."
                 ghLink="https://github.com/abelwebdev/flick-verse"
-                demoLink="https://flick-verse.netlify.app/"
+                demoLink="https://flick-verse.netlify.app"
               />
             </Col>
+
+            <Col md={4} className="project-card">
+              <ProjectCard
+                imgPath={GuitarJamTrack}
+                title="Guitar JamTrack"
+                description="Guitar JamTrack is a Next.js app designed for guitar enthusiasts to browse, play, and organize backing tracks. Discover new tracks and artists, and create personalized playlists effortlessly."
+                ghLink="https://github.com/abelwebdev/guitar-jam-track"
+                demoLink="https://guitar-jam-track.netlify.app"
+              />
+            </Col>
+            
 
             <Col md={4} className="project-card">
               <ProjectCard
