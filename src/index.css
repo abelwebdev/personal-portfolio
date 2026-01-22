@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base font-family (Inter is loaded via Google Fonts link in index.html) */
 body {
-  margin: 0;
-  font-family: "Raleway", serif !important;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(to left, rgb(0, 0, 0), rgb(0, 0, 0));
+  font-family: 'Inter', sans-serif;
 }
