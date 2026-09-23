@@ -26,9 +26,9 @@ const App: React.FC = () => {
 
   const Logo = () => (
     <div className="font-bold text-xl tracking-tight text-gray-900 dark:text-white font-mono flex items-center group">
-      <span className="text-gray-400 dark:text-zinc-600 transition-transform duration-300 group-hover:-translate-x-1">&lt;</span>
+      <span className="text-primary dark:text-primary transition-transform duration-300 group-hover:-translate-x-1">&lt;</span>
       <span className="mx-0.5">Abel</span>
-      <span className="text-gray-400 dark:text-zinc-600 transition-transform duration-300 group-hover:translate-x-1"> /&gt;</span>
+      <span className="text-primary dark:text-primary transition-transform duration-300 group-hover:translate-x-1"> /&gt;</span>
     </div>
   );
 

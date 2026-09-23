@@ -2,16 +2,17 @@ import React from 'react';
 import { ExternalLink, Github } from 'lucide-react';
 import { Project } from '../types';
 import { RevealOnScroll } from './RevealOnScroll';
+import { LuGithub } from "react-icons/lu";
 
 const projects: Project[] = [
   {
     id: 1,
-    title: 'Flick Verse',
-    description: 'A movie streaming platform built with React and Tailwind CSS, featuring the latest movies and TV shows with fast search functionality.',
-    technologies: ['TypeScript', 'React', 'Tailwind', 'Framer Motion'],
-    link: 'https://flick-verse.netlify.app',
-    github: 'https://github.com/abelwebdev/flick-verse',
-    image: '/projects/flick-verse.png',
+    title: 'Guitar JamTrack',
+    description: 'A Next.js platform for guitar enthusiasts to browse, play, and organize backing tracks with seamless playlist creation and artist discovery.',
+    technologies: ['TypeScript', 'Next.js', 'Tailwind', 'Prisma', 'PostgreSQL', 'Neon', 'Shadcn/ui', 'Firebase'],
+    link: 'https://guitar-jam-track.onrender.com/',
+    github: 'https://github.com/abelwebdev/guitar-jam-track',
+    image: '/projects/guitar-jam-track.png',
   },
   {
     id: 2,
@@ -24,12 +25,13 @@ const projects: Project[] = [
   },
   {
     id: 3,
-    title: 'Guitar JamTrack',
-    description: 'A Next.js platform for guitar enthusiasts to browse, play, and organize backing tracks with seamless playlist creation and artist discovery.',
-    technologies: ['TypeScript', 'Next.js', 'Tailwind', 'Prisma', 'PostgreSQL', 'Neon', 'Shadcn/ui', 'Firebase'],
-    link: 'https://guitar-jam-track.netlify.app',
-    github: 'https://github.com/abelwebdev/guitar-jam-track',
-    image: '/projects/guitar-jam-track.png',
+    title: 'Flick Verse',
+    description: 'A movie streaming platform built with React and Tailwind CSS, featuring the latest movies and TV shows with fast search functionality.',
+    technologies: ['TypeScript', 'React', 'Tailwind', 'Framer Motion'],
+    link: 'https://flick-verse.netlify.app',
+    github: 'https://github.com/abelwebdev/flick-verse',
+    image: '/projects/flick-verse.png',
+
   }
 ];
 
@@ -104,7 +106,7 @@ export const Projects: React.FC = () => {
 
                   <div className="mt-auto flex items-center gap-4 pt-4 border-t border-gray-100 dark:border-zinc-900">
                     <a href={project.github} target="_blank" className="flex items-center gap-1 text-sm font-medium text-gray-700 dark:text-zinc-300 hover:text-primary transition-all duration-300 hover:-translate-y-1 hover:scale-105">
-                      <Github size={18} className="transition-transform duration-300 group-hover:rotate-12" />
+                      <LuGithub size={18} className="transition-transform duration-300 group-hover:rotate-12" />
                       Code
                     </a>
                     <a href={project.link} target="_blank" className="flex items-center gap-1 text-sm font-medium text-gray-700 dark:text-zinc-300 hover:text-primary transition-all duration-300 hover:-translate-y-1 hover:scale-105">

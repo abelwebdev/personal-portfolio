@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
-import { ArrowRight, GithubIcon, LinkedinIcon, Mail } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
+import { LuGithub } from "react-icons/lu";
 
 export const Hero: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -151,10 +152,7 @@ export const Hero: React.FC = () => {
             
             <div className="flex items-center space-x-4">
               <a href="https://github.com/abelwebdev" target="_blank" className="p-2 text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-all hover:-translate-y-1" aria-label="GitHub">
-                <GithubIcon size={24} />
-              </a>
-              <a href="https://www.linkedin.com/in/abelwebdev" target="_blank" className="p-2 text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-all hover:-translate-y-1" aria-label="LinkedIn">
-                <LinkedinIcon size={24} />
+                <LuGithub className="w-6 h-6"/>
               </a>
             </div>
           </div>
