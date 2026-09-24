@@ -99,7 +99,7 @@ const TechIcon: React.FC<{ iconName: string; name: string; invertInDark?: boolea
       alt={name}
       onError={() => setHasError(true)}
       className={`w-8 h-8 object-contain shrink-0 transition-transform duration-200 group-hover:scale-115 ${
-        invertInDark ? 'dark:invert' : ''
+        invertInDark ? 'dark:invert dark:hue-rotate-180' : ''
       }`}
       loading="lazy"
     />
