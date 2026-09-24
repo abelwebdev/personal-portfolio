@@ -56,7 +56,7 @@ const CATEGORIES: CategoryGroup[] = [
   },
   {
     index: 4,
-    name: 'Database',
+    name: 'Database & ORM/ODM',
     icon: Database,
     skills: [
       { name: 'PostgreSQL', iconName: 'logos:postgresql' },
